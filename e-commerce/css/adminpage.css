@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+/* Navigation Bar */
+.navbar {
+  height: 60px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+.navbar .btn {
+  background-color: #f44336;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.navbar .btn:hover {
+  background-color: #e53935;
+}
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px; /* Height of navbar */
+  left: 0;
+  width: 200px;
+  height: calc(100% - 60px);
+  background-color: #444;
+  padding-top: 20px;
+}
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.sidebar a:hover {
+  background-color: #575757;
+}
+/* Main Content */
+.main-content {
+  margin-top: 60px; /* To avoid overlap with navbar */
+  margin-left: 210px; /* To avoid the sidebar */
+  padding: 20px;
+}
